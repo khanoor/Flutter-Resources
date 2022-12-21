@@ -103,6 +103,7 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 20,
             ),
+            data.length > 0 ?
             Column(
               children: [
                 Row(
@@ -167,7 +168,7 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               ],
-            )
+            ) : Container(child: Text("wait"),)
           ],
         ),
       ),
